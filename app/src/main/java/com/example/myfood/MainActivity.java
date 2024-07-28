@@ -1,6 +1,7 @@
 package com.example.myfood;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +21,12 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Init();
     }
+
+    private void Init() {
+        Toast.makeText(this, "Hello everybody", Toast.LENGTH_SHORT).show();
+    }
+
 }
